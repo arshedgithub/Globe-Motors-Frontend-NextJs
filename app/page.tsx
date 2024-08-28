@@ -23,7 +23,6 @@ const Products = async () => {
 
   return (
     <div>
-      <h1>Products</h1>
       {products.map(product => <ProductCard product={product} />)}
     </div>
   )

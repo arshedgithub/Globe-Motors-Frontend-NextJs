@@ -16,6 +16,7 @@ const AppBar = () => {
           color="inherit"
           aria-label="menu"
           sx={{ mr: 2 }}
+          onClick={() => router.push('/')}
         >
           <Menu />
         </IconButton>
@@ -31,7 +32,7 @@ const AppBar = () => {
         <IconButton size='large' color='inherit' onClick={() => router.push('/login')}>
           <AccountCircle />
         </IconButton>
-        
+
       </Toolbar>
     </Box >
   )
