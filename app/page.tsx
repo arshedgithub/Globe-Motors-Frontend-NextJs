@@ -3,7 +3,7 @@ import ProductCard from "./components/ProductCard";
 import { IProduct } from "./intefaces/product";
 
 async function getProducts(): Promise<IProduct[]> {
-  const res = await fetch("https://globe-motors-backend.vercel.app/api/products/", {
+  const res = await fetch(`${process.env.BACKEND_API}/api/products/`, {
     next: { revalidate: 30 }
   });
   return res.json();
