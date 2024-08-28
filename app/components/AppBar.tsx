@@ -1,9 +1,12 @@
 'use client'
 import { AccountCircle, Menu, ShoppingCart } from '@mui/icons-material'
 import { Badge, Box, Button, IconButton, Toolbar, Typography } from '@mui/material'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const AppBar = () => {
+
+  const router = useRouter();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Toolbar>
@@ -25,10 +28,10 @@ const AppBar = () => {
           </Badge>
         </IconButton>
 
-        <IconButton size='large' color='inherit'>
+        <IconButton size='large' color='inherit' onClick={() => router.push('/login')}>
           <AccountCircle />
         </IconButton>
-
+        
       </Toolbar>
     </Box >
   )
