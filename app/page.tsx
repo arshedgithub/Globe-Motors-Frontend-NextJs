@@ -1,6 +1,7 @@
 import AppBar from "./components/AppBar";
+import { IProduct } from "./intefaces/product";
 
-async function getProducts() {
+async function getProducts(): Promise<IProduct[]> {
   const res = await fetch("https://globe-motors-backend.vercel.app/api/products/", {
     next: { revalidate: 30 }
   });
