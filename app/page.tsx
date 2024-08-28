@@ -1,4 +1,5 @@
 import AppBar from "./components/AppBar";
+import ProductCard from "./components/ProductCard";
 import { IProduct } from "./intefaces/product";
 
 async function getProducts(): Promise<IProduct[]> {
@@ -24,7 +25,7 @@ const Products = async () => {
   return (
     <div>
       <h1>Products</h1>
-      {products.length}
+      {products.map(product => <ProductCard product={product} />)}
     </div>
   )
 }
