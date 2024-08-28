@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {isAdmin? (<body className={inter.className}><AppBar />{children}</body>) : <SideNavLayout children={children} />}
+      {isAdmin ? <SideNavLayout children={children} /> : (<body className={inter.className}><AppBar />{children}</body>)}
     </html>
   );
 }
