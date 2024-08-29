@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import Navigation from "./components/Navigation";
 import "./globals.css";
-import AppBar from "./components/AppBar";
-import SideNavLayout from "./components/SideNav";
-
-const inter = Inter({ subsets: ["latin"] });
-let isAdmin: boolean = false;
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {isAdmin ? <SideNavLayout children={children} /> : (<body className={inter.className}><AppBar />{children}</body>)}
+      <Navigation children={children} />
     </html>
   );
 }
