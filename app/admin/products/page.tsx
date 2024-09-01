@@ -1,7 +1,9 @@
+import AddProductForm from "@/app/components/AddProductForm";
+
 export default function Home() {
 
   return (
     <>
-    Hi admin, products here 
+      <AddProductForm />
     </>);
 }
