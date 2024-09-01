@@ -2,6 +2,6 @@ export default function Home() {
 
   return (
     <>
-    admin here hi
+    Hi admin, products here 
     </>);
 }

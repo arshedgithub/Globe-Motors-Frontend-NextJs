@@ -1,6 +1,6 @@
 'use client'
 import { AccountCircle, Menu, ShoppingCart } from '@mui/icons-material'
-import { Badge, Box, Button, IconButton, Toolbar, Typography } from '@mui/material'
+import { Badge, Box, IconButton, Toolbar, Typography } from '@mui/material'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
@@ -20,7 +20,7 @@ const AppBar = () => {
         >
           <Menu />
         </IconButton>
-        <img src="./globe-logo.png" alt="logo" style={{height: "40px"}} />
+        <img src="/globe-logo.png" alt="logo" style={{height: "40px"}} />
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}></Typography>
 
         <IconButton size='large' color='inherit'>

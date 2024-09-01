@@ -1,6 +1,5 @@
-import AppBar from "./components/AppBar";
-import ProductCard from "./components/ProductCard";
-import { IProduct } from "./intefaces/product";
+import ProductCard from "../components/ProductCard";
+import { IProduct } from "../intefaces/product";
 
 async function getProducts(): Promise<IProduct[]> {
   const res = await fetch(`${process.env.BACKEND_API}/api/products/`, {
